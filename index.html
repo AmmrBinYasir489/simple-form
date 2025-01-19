@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+        body{
+            height: 100vh;
+            font-family: "Space Grotesk", serif;
+            background: linear-gradient(rgb(0, 255, 242), rgb(255, 8, 255));
+            box-sizing: border-box;
+        }
+        fieldset{
+            text-align: left;
+            font-size: 20px;
+            padding: 10px 10px;
+            display: inline-block;
+        }
+        form{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        legend{
+            color: white;
+            font-weight: 900;
+        }
+        input{
+            margin: 10px 10px;
+        }
+        label{
+            font-weight: 500;
+            margin: 10px 10px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+            color: white;
+        }
+        #submit{
+            font-size: 15px;
+            color: red;
+            background-color: rgb(229, 255, 0);
+            border: none;
+            border-radius: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formspree.io/f/xgvvpqvk"
+        method="POST">
+        <fieldset>
+            <legend>Provide Each Detail Acurately</legend>
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="Name" placeholder="@johns" required><br>
+            <label for="Father-Name">Father Name:</label>
+            <input type="text" name="Father-Name" id="Father-Name" placeholder="@david" required><br>
+            <label for="DOB">Date-of-Birth:</label>
+            <input type="date" value="Date-of-Birth" name="DOB"><br>
+            <label for="Phone-Number">Phone Number:</label>
+            <input type="tel" name="Phone-Number" placeholder="+92 000 0000000"><br>
+            <label for="Address">Address:</label>
+            <input type="text" name="Address" placeholder="abc street"><br>
+            <label for="Favourite-Color">Favourite-Color:</label>
+            <input type="color" name="Favourite-Color" id="Favourite-Color" value="Favourite-Color"><br>
+            <input type="checkbox" name="Class" id="Class" value="Below Matric">
+            <label for="Class">Below Matric</label>
+            <input type="checkbox" name="Class" id="Class" value="Above Matric">
+            <label for="Class">Above Matric</label><br>
+            <label for="Gender">Gender:</label><br>
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="Female">Female</label><br>
+            <input type="submit" value="Submit" id="submit">
+            <p>Thanks for Your Time</p>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
